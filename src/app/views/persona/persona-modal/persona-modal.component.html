@@ -1,0 +1,29 @@
+<mat-form-field appearance="fill">
+    <mat-label>Nombres</mat-label>
+    <input matInput placeholder="Nombres" [(ngModel)]="persona.nombres">
+</mat-form-field>
+<mat-form-field appearance="fill">
+    <mat-label>Apellidos</mat-label>
+    <input matInput placeholder="Apellidos" [(ngModel)]="persona.apellidos">
+</mat-form-field>
+<mat-form-field appearance="fill">
+    <mat-label>Edad</mat-label>
+    <input matInput placeholder="Edad" [(ngModel)]="persona.edad">
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+    <mat-label *ngIf="persona.pais">{{persona.pais.nombre}}</mat-label>
+    <mat-select matInput placeholder="Seleccione un país" [(ngModel)]="persona.pais">
+        <mat-option *ngFor="let p of pais" [value]="p">
+            {{p.nombre}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+<button mat-button color="primary" (click)="aceptar()">
+    Aceptar
+</button>
+
+<button mat-button color="primary" (click)="cerrar()">
+    Cancelar
+</button>

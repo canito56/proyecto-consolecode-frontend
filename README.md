@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
+## Steps to follow
+
+tsc -v                  (version de typescript)
+ng --version            (version de angular)
+ng new nombre-proyecto  (dentro de la carpeta del proyecto)
+    Would you like to add Angular routing? (y/N) y
+    CSS                 (elijo CSS)
+                        (ojo! despues de q crea el proyecto, nos tenemos q meter en la carpeta q
+                        nos creó el Angular)
+npm i @angular/cdk --save
+ng add @angular/material
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
